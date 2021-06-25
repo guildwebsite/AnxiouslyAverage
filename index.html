@@ -3,15 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Conforti</title>
+	<title>Anxiously Average</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">	
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+	<!-- Google Firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
 
 <!-- Navigation -->
 <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -26,13 +39,13 @@
 				<a class="nav-link" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#about_me">About Me</a>
+				<a class="nav-link" href="#about_me">About Us</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#proficiency">Proficiency</a>
+				<a class="nav-link" href="#proficiency">Recruitment Needs</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#three_project_cards">Projects</a>
+				<a class="nav-link" href="#three_project_cards">Gear Reservations</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#connect">Connect</a>
@@ -52,29 +65,13 @@
 	</ul> -->
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="img/flower.png">
+			<img src="img/try2.png">
 			<div class="carousel-caption">
-				<h1 class="display-2">Rachel Conforti</h1>
-				<h3 class="display-secondheader">Aspiring Data Scientist</h3>
-				<a href="#about_me"><button type="button" class="btn btn-primary btn-lg">More About Me</button></a>
+				<h1 class="display-2">Anxiously Average</h1>
+				<h3 class="display-secondheader">Semi-Hardcore Raiding Guild</h3>
+				<a href="#about_me"><button type="button" class="btn btn-primary btn-lg">More About Us</button></a>
 			</div>
 		</div>
-		<!-- <div class="carousel-item">
-			<img src="img/flower.png">
-			<div class="carousel-caption">
-				<h1 class="display-2">Rachel Conforti</h1>
-				<h3 class="display-secondheader">Aspiring Data Scientist</h3>
-				<a href="#about_me"><button type="button" class="btn btn-primary btn-lg">More About Me</button></a>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="img/tree.jpg">
-			<div class="carousel-caption">
-				<h1 class="display-2">Rachel Conforti</h1>
-				<h3 class="display-secondheader">Aspiring Data Scientist</h3>
-				<a href="#about_me"><button type="button" class="btn btn-primary btn-lg">More About Me</button></a>
-			</div>
-		</div> -->
 	</div>
 </div>
 
@@ -82,7 +79,7 @@
 <div class="container-fluid">
 	<div class="row jumbotron">
 		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 col xl-12">
-			<h5 class="lead1">Welcome! I hope you stick around to learn a little bit more about me, my skills, and my projects.
+			<h5 class="lead1">Welcome! Below you find out more about us, our recruitment needs, and gear reservation.
 			</h5>
 		</div>
 	</div>
@@ -92,24 +89,26 @@
 <!--- Two Column Section/About Me -->
 <div id=about_me class="container-fluid padding">
 	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2 class="aboutmetitle">About me </h2>
-			<p> Hello, my name is Rachel Conforti. I am currently a Senior at University of North Carolina at Charlotte. I am a part of the Early Entry program meaning I will be
-				graduating in December of 2021 with my undergraduate in Computer Science with a concentration in Data Science, and my minor in Mathematics along with half of my Masters in Data Science completed.</p>
-			<p> I chose computer science as my profession because it was the first major that combined what I love the most, creating and computers. I have always enjoyed creating, crafting, and coloring while
-				simultaneously being on the computer and playing video games. These two sides of myself have always dueled, if I was doing one I couldn't do the other.
-				So, when I decided to switch my major to computer science I finally felt that my need for both were satisfied.
-				I throughly love the idea that I can sit in front of the computer and create whatever I would like to create. </p>
-			<p> This field is so diverse with so many opportunites. I have an idea of where I would want to go but I am looking foward to the journey and seeing what becomes avaliable to me.
-				If you are interested in more of my skills; my resume is linked below. 
+		<!-- <div class="col-md-12 col-lg-6"> -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 col xl-12">
+			<h1 class="aboutmetitle">About Us </h1>
+			<hr>
+			<p> Hello, we are Anxiously Average and we are a casual raiding guild for World of Warcraft: The Burning Cursade on Mankirk. We are just a group
+				of friends that met in Classic and decided to make a guild. We are cultivating a chill enviorment that is drama free and fun where experienced and new players can enjoy the game together.
+				At the start our main priority will be to get the raid group up and running but we will work towards a active guild that is upbeat and social. We just ask that you treat everyone with respect,
+				don't bring up politics, and be friendly and willing to help out a fellow guidlie. If you have any questions please let us know!
 			</p>
-				<h2 div class = "resume">
-				<a href="https://drive.google.com/file/d/1E6LuaBGOQSTuwy5Odf5PbZG03frQOKyM/view?usp=sharing">Link to my resume</a>
-				</h2>
+			<p> Anyone is welcome to join the guild! We are looking for raiders for our raiding team. We will have our recuitment needs below and will be updated regularly.
+				We will be raiding on Friday and Saturday at 8 pm EST to 11 pm EST.
+			</p>
 			<br>
-		</div>
-		<div class="col-lg-6">
-			<img src="img/SmallerHeadshot.jpg" class="img-fluid">
+			<h3>Raid Information</h3>
+			<hr>
+			<p><b>Server: </b>Mankirk </p>
+			<p><b>Type:</b> Semi-Hardcore/Casual </p>	
+			<p><b>Loot System:</b> MS>OS gear reservation which is completed futher down the page. Non-reserved gear will be Need/Greed system.</p>
+			<p><b>Raid Times:</b> Friday and Saturday at 8pm to 11pm <b>server time</b> </p>
+			<!-- </div> -->
 		</div>
 	</div>
 	</div>
@@ -118,50 +117,54 @@
 <div id="proficiency" class="container-fluid padding">
 	<div id="test" class="row welcome text-center">
 		<div class="col-12">
-			<h1 class="display-4">My Language Skills</h1>
+			<h1 class="display-4">Recruitment Needs</h1>
 		</div>
 		<hr>
 		<div class="col-12">
-			<p class="lead">Here is a list of some of the languages I know. I used HTML5, Bootstrap, and CSS3 to build this website. </p>
+			<p class="lead">Here is a list of some of class we need </p>
 		</div>
 	</div>
 	</div>
 
-<!--- Three Column Section - Lang Cont. -->
+<!--- recruitment -->
 <div class="container-fluid padding">
-<div class="row text-center padding">
+<div class="row text-center padding"> <!-- style = "height: 450px" -->
 	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-code"></i>
-		<h3>HTML5</h3>
-		<p> This website is built with HTML5.</p>
+		<i class="fas fa-shield-alt"></i>
+		<h3>Tanks</h3>
+		<p>We need 1 tank</p>
+		<hr>
+		<p>Open to:</p>
+		<p>Druid</p>
+		<p>Warrior</p>
+		<p>Paladin</p>
 	</div>
+	
 	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fas fa-bold"></i>
-		<h3>BOOTSTRAP</h3>
-		<p> This website is built with Bootstrap 4.</p>
+		<i class="fas fa-bomb"></i>
+		<h3>DPS</h3>
+		<p>We need 3 DPS</p>
+		<hr>
+		<p>Open to:</p>
+		<p>Mage</p>
+		<p>Priest</p>
+		<p>Paladin</p>
 	</div>
+
 	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fab fa-css3"></i>
-		<h3>CSS3</h3>
-		<p> This website is built with CSS3.</p>
+		<i class="fas fa-cross"></i>
+		<h3>Healers</h3>
+		<p>We need 1 healer</p>
+		<hr>
+		<p>Open to:</p>
+		<p>Priest</p>
+		<p>Druid</p>
+		<p>Paladin</p>
 	</div>
-	<!-- not sure why this icon is not loading. https://fontawesome.com/icons/java?style=brands -->
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fab fa-js-square"></i>
-		<h3>JAVA</h3>
-		<p> Proficent in Java.</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fab fa-python"></i>
-		<h3>PYTHON</h3>
-		<p>Proficent in Python.</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class='fab fa-cuttlefish'></i>
-		<h3>C++</h3>
-		<p>Proficent in C++.</p>
-	</div>
+
+	
 </div>
+
 <hr class="my-4">
 </div>
 
@@ -177,62 +180,30 @@
 <div id=projects class="container-fluid padding">
 <div class="row welcome text-center">
 	<div class="col-12">
-		<h1 class="display-h4">Major Projects</h1>
+		<h1 class="display-h4">Gear Reservation</h1>
 	</div>
 </div>
 </div>
 
 <!--- Project Links -->
 <div id=three_project_cards class ="container-fluid padding">
-<div class="row padding">
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/pirate-game-2.PNG">
-			<div class="card-body">
-				<h4 class="card-title">Pirate Puzzle Game</h4>
-				<p class="card-text"> For my Masters Game Design class we made "Pirate Bootay". It was a team of four using GameMaker Studio 2 to create a 2-d puzzle game. We have 
-					hand drawn art by one of my team members. This was the second game we have ever built as a team. It included enemies, scores, puzzles, and 3 different levels. I was the 
-					team leader on this project so I was in charge of assisting everyone with their roles and overall artistic vision of the game. 
-				</p>
-				<a href="https://github.com/jacktsloan99/GameProject2 " class="btn btn-outline-secondary">See Project on Git</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/world-happiness.png">
-			<div class="card-body">
-				<h4 class="card-title">World Happiness Data Visualization</h4>
-				<p class="card-text"> Using Dash and Plotly we created 3 different interactive graphs. We have a chloropleth, a stacked bar chart, and a multi-dot graph at the bottom.
-					We also have a slider and a drop-down box all created in python. This was a group effort in which none of us have used dash and plotly so it was very fun to me to 
-					watch us grow through out the project and create something I think is very interesting to look at.
-				</p>
-				<a href="https://github.com/rconforti97/WorldHappinessDataVisualization" class="btn btn-outline-secondary">See Project on Git</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4">
-		<div class="card">
-			<img class="card-img-top" src="img/A and Greedy search..PNG">
-			<div class="card-body">
-				<h4 class="card-title">Greedy and A* Search</h4>
-				<p class="card-text"> This was for my Artificial Intelligence course we were asked to build a greedy and A* search using python. We had the program read in the grid from a file
-					with the start node and goal node pre-defined and find the optimal route depnding if you selected Greedy or A* search. It returns with starting node, the goal node, the final path executed, and the number states expanded. </p>
-				<a href="https://github.com/rconforti97/Informed-Search" class="btn btn-outline-secondary">See Project on Git</a>
-			</div>
-		</div>
-	</div>
-	
-</div>
+	<div class="container">
+		<!-- <div class="col-xs-12 col-sm-12 col-md-9 col-lg-10 col xl-12"></div> -->
+		<!-- <script type="text/javascript" src="https://form.jotform.com/jsform/211756072138050"></script> -->
+			<a href="url">https://form.jotform.com/211756072138050>Click me to reserve your gear!</a>
+		<!-- </div> -->
+	  </div>
 </div>
 
 <!--- Connect -->
 <div id=connect class="container-fuild padding">
 <div class="row text-center padding">
 	<div class="col-12 social padding">
-		<h5>Feel free to look at my Github or Linkedin</h5>
-		<a href="https://github.com/rconforti97"><i class="fab fa-github"></i></a>
-		<a href="https://www.linkedin.com/in/rachel-conforti-1009b91a1/"><i class="fab fa-linkedin"></i></a>
+		<h5>Contact</h5>
+					<hr class = "boarder">
+					<p>Guild Leader: Floodhoof - discord Floodhoof!#6525 </p>
+					<p>Officer: Ryzla - discord Ryzla#0688</p>
+					<p>Officer: Recyclöps - discord Mashed Potato#6586</p>
 	</div>
 </div>
 </div>
@@ -242,40 +213,23 @@
 		<div class="container-fluid padding">
 		<div class="row text-center">
 			<div class="col-12">
-					<h5>Contact Me</h5>
+					<h5>Hope you join us!</h5>
 					<hr class = "boarder">
-					<p>rachelmarieconforti@gmail.com</p>
-					<p>Charlotte, North Carolina</p>
+					<p>Feel free to whisper us at any time</p>
 			</div>
 		</div>
 		</div>
 </footer>
-
+<body>
+	<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="/__/firebase/8.6.8/firebase-app.js"></script>
+  
+	<!-- Add Firebase products that you want to use -->
+	<script src="/__/firebase/8.6.8/firebase-auth.js"></script>
+	<script src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+  </body>
 </body>
 </html>
 
 
-
-
-
-
-
-
-
-
-<!--- Loading Page Idea :D https://media.giphy.com/media/tRfWWQ9o7zQvm/giphy.gif-->
-<!--- Two Column Section 
-<div class="container-fluid padding">
-		<div class="row padding">
-			<div class="col-md-12 col-lg-6">
-				<h2>Our Philosopgy</h2>
-				<p>The columns will automatically stack on top of each other when the screen is less than 576ox wide.</p>
-				<p> Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of the total internet traffic.</p>
-
-			</div>
-			<div class="col-lg-6">
-				<img src="img/bootstrap2.png" class="img-fluid">
-			</div>
-		</div>
-		<hr class="my-4">
-		</div>-->
