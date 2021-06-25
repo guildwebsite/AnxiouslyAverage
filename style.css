@@ -120,11 +120,11 @@ hr.light {
   margin-bottom: 1rem;
 }
 .aboutmetitle {
-  color: #CA3433;
+  color: #000000;
   /* text-shadow: 1px 1px 3px #CCABD8; */
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 2px #ffffff;
   font-size: 500%;
-  font-family: 'Cormorant Upright', serif;
+  font-family: 'Anton', sans-serif;
   /* -webkit-text-stroke: .2px #CCABD8; */
 }
 
