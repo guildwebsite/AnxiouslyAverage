@@ -150,24 +150,36 @@ input[type=submit]:hover {
   background-color: #CA3433;
 }
 
-.container {
+.gear_link {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 20px;
 }
 
-#proficiency {
+.gear_link a{
+  color: #CA3433;
+  -webkit-text-stroke: .2px #CA3433;
+  font-size: 25px
+}
+
+#recruitment {
   padding: 5.5%;
 }
-#about_me {
+#about_us {
   /* org. 11 */
   padding: 11%;
 }
-#projects {
-  padding: 5%;
+#gear {
+  padding: 3%;
 }
-#three_project_cards {
+#gear_reservations {
   padding: 0%;
+  text-align: center;
+}
+.resume a {
+  font-size: 80%;
+  color: #0000009a;
+  -webkit-text-stroke: .2px #CCABD8;
 }
 #connect {
   padding: 5%;
@@ -190,17 +202,17 @@ input[type=submit]:hover {
     font-size: 4em;
     padding: 2rem;
   }
-  #proficiency {
+  #recruitment {
     padding: 5%;
     /* height: 60%; */
   }
-  #about_me {
+  #about_us {
     padding: 5%;
   }
-  #projects {
+  #gear {
     padding: 5%;
   }
-  #three_project_cards {
+  #gear_reservations {
     padding: 5%;
   }
   #connect {
@@ -208,16 +220,16 @@ input[type=submit]:hover {
   }
   }
 @media (max-width: 768px) {
-  #proficiency {
+  #recruitment {
     padding: 5%;
   }
-  #about_me {
+  #about_us {
     padding: 5%;
   }
-  #projects {
+  #gear {
     padding: 5%;
   }
-  #three_project_cards {
+  #gear_reservations {
     padding: 5%;
   }
   #connect {
@@ -251,16 +263,16 @@ input[type=submit]:hover {
     padding: 5%; 
     margin-top: 10%;
   }
-  #proficiency {
+  #recruitment {
     padding: 20%;
   }
-  #about_me {
+  #about_us {
     padding: 5%;
   }
-  #projects {
+  #gear {
     padding: 5%;
   }
-  #three_project_cards {
+  #gear_reservations {
     padding: 5%;
   }
   #connect {
@@ -314,6 +326,9 @@ figure {
   width: 100%;
   height: 60%;
   margin: 0!important;
+  background-attachment: scroll;
+  overflow: auto;
+
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
@@ -336,6 +351,7 @@ figure {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
+  background-attachment: scroll;
 }
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
